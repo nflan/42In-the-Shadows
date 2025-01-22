@@ -17,10 +17,6 @@ public class TutorialScript : MonoBehaviour
 
     public void ActiveMenu(int tuto)
     {
-        foreach (var map in m_InputActionAsset.bindings)
-        {
-            Debug.LogWarning("Control: " + map.action + " - " + map.effectivePath + map.ToString());
-        }
         switch (tuto)
         {
             case 1:

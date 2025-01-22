@@ -17,7 +17,6 @@ public class RewardController : MonoBehaviour
     {
         if (m_Stars.Count == 0 || m_Texts.Count == 0)
         {
-            Debug.LogWarning("One or more rewards are not set in " + this.name);
             foreach (Transform child in this.transform)
             {
                 foreach (Transform star in child)

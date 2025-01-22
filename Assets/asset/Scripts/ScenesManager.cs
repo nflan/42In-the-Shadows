@@ -23,7 +23,6 @@ public class ScenesManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
-        this.PrintPlayerPrefs();
         if (m_GameMenu == null || m_SettingsMenu == null || m_ControlsPanel == null || m_MenuPanel == null || m_StageSelection == null)
         {
             if (m_MenuPanel == null)
@@ -102,7 +101,6 @@ public class ScenesManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No FullScreen key found, setting to true");
             this.m_SettingsMenu.SetFullScreen(true);
         }
         if (PlayerPrefs.HasKey("Resolution"))

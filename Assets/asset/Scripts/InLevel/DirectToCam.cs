@@ -9,7 +9,6 @@ public class DirectToCam : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.V))
         {
-            Debug.Log("Directing to camera");
             transform.forward = m_Compare.transform.rotation * Vector3.back;
         }
     }

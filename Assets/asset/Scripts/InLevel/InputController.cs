@@ -142,7 +142,6 @@ public class InputController : MonoBehaviour
     public void EndLevel()
     {
         float lvl = PlayerPrefs.GetFloat("CurrentLevel", 1f);
-        Debug.Log("Level " + lvl + " completed");
         switch (lvl)
         {
             case < 2:

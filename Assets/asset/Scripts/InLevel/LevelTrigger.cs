@@ -55,7 +55,6 @@ public class LevelTrigger : MonoBehaviour
         m_Timer.gameObject.SetActive(true);
         if (Mathf.RoundToInt(currentLevel * 10) % 10 == 1)
         {
-            Debug.LogWarning("currentLevel is a tutorial");
             m_InputController.PauseTutorial(Mathf.FloorToInt(currentLevel));
         }
     }

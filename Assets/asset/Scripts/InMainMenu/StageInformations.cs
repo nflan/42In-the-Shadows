@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -62,6 +60,23 @@ public class StageInformations : IStage
     public void SetCurrentLevel()
     {
         PlayerPrefs.SetFloat("CurrentLevel", this.m_StageNumber);
+    }
+
+    public int GetStars()
+    {
+        float time = PlayerPrefs.GetFloat(this.m_StageName + this.m_StageNumber, 0f);
+        int stars = 0;
+        if (time > 0.000001f)
+        {
+            for (int i = 0; i < m_StageRewards.Count; i++)
+            {
+                if (time <= m_StageRewards[i])
+                {
+                    stars++;
+                }
+            }
+        }
+        return stars;
     }
 
     public void DisplayInformations()

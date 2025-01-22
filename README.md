@@ -20,5 +20,7 @@ Bonus part
 Controls
 ---
 - click and slide to rotate horizontaly.
-- ctrl + click and slide to rotate verticaly.
-- shift + click and slide to move the object.
+- ctrl + left mouse button and slide to rotate verticaly.
+- shift + left mouse button and slide to move the object.
+- I: have a clue to understand what the shadow is.
+- R: Reset position and rotation of the object.

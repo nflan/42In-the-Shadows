@@ -29,7 +29,6 @@ public class LevelInformations : IStage
         }
         if (PlayerPrefs.GetFloat(this.m_StageName, 0f) < 0.000001f)
         {
-            Debug.Log("Unlock stage " + this.m_StageNumber);
             PlayerPrefs.SetFloat("UpdateSelectionStage", 1f);
             this.UnlockNextStage();
         }
