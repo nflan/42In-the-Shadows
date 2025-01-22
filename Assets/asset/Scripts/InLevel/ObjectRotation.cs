@@ -5,13 +5,15 @@ public class ObjectRotation : MonoBehaviour
 {
     private bool    m_Finish = false;
     private Vector3 m_InitialPosition;
+    private Vector3 m_InitialRotation;
 
     [Header("Object Information")]
     [SerializeField] private List<CheckPosition> m_CheckPositions;
 
     [Header("Rotation Settings")]
     [SerializeField] private float m_Threshold;
-    [SerializeField] private float m_Speed = 60f; // Rotation/Movement speed
+    [SerializeField] private float m_MovementSpeed = 12f; // Rotation/Movement speed
+    [SerializeField] private float m_RotationSpeed = 180; // Rotation speed
 
     [Header("Components")]
     [SerializeField] private Transform   m_LightSource;
@@ -22,6 +24,13 @@ public class ObjectRotation : MonoBehaviour
     void Start()
     {
         m_InitialPosition = transform.position;
+        m_InitialRotation = transform.eulerAngles;
+    }
+
+    public void RestartPos()
+    {
+        transform.position = m_InitialPosition;
+        transform.eulerAngles = m_InitialRotation;
     }
 
     // Smooth Movement
@@ -29,16 +38,12 @@ public class ObjectRotation : MonoBehaviour
     {
         Vector3 targetPosition = new Vector3(
             transform.position.x,
-            transform.position.y + y * m_Speed * Time.deltaTime * 10,
-            transform.position.z + x * m_Speed * Time.deltaTime * 10
+            transform.position.y + y * m_MovementSpeed * Time.deltaTime,
+            transform.position.z + x * m_MovementSpeed * Time.deltaTime
         );
         transform.position = targetPosition;
     }
 
-    public void RestartPos()
-    {
-        transform.position = m_InitialPosition;
-    }
 
     // Smooth Rotation
     public void RotateObject(float x, float y, bool isVertical = true)
@@ -46,8 +51,8 @@ public class ObjectRotation : MonoBehaviour
         Vector3 right = this.transform.parent.right;
         Vector3 up = this.transform.parent.up;
 
-        float turnY = y * m_Speed;
-        float turnX = x * m_Speed;
+        float turnY = y * m_RotationSpeed * Time.deltaTime;
+        float turnX = x * m_RotationSpeed * Time.deltaTime;
 
         if (isVertical)
         {
@@ -63,15 +68,10 @@ public class ObjectRotation : MonoBehaviour
     {
         if (IsSameDirection() && IsGoodPosition())
         {
-            Debug.Log("name = " + this.name + " = Finish");
             this.m_Finish = true;
         }
         else
         {
-            if (IsSameDirection())
-                Debug.Log("name = " + this.name + " = Same direction");
-            if (IsGoodPosition())
-                Debug.Log("name = " + this.name + " = Good position");
             this.m_Finish = false;
         }
     }

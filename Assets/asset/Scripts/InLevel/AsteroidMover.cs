@@ -9,9 +9,9 @@ public class AsteroidMover : MonoBehaviour
     [SerializeField] private Vector2 m_RangeVelocityZ;
     [SerializeField] private float m_DistanceMax = 300f;
 
-    void OnEnable()
+    void Start()
     {
-        transform.position = m_StartPosition;
+        // transform.position = m_StartPosition;
         this.GetComponent<Rigidbody>().velocity = new Vector3(
             Random.Range(m_RangeVelocityX.x, m_RangeVelocityX.y),
             Random.Range(m_RangeVelocityY.x, m_RangeVelocityY.y),
@@ -23,7 +23,7 @@ public class AsteroidMover : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, m_StartPosition) > m_DistanceMax)
         {
-            this.gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
 }
