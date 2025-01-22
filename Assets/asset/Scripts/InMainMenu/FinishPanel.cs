@@ -10,7 +10,7 @@ public class FinishPanel : MonoBehaviour
 
     void Start()
     {
-        if (PlayerPrefs.GetFloat("Stage3", 0f) > 3.31f)
+        if (CheckFinish())
         {
             m_FinishPanel.SetActive(true);
             m_FinishText.text = "Congratulations!\n";
@@ -18,6 +18,18 @@ public class FinishPanel : MonoBehaviour
             m_FinishText.text += "<color=\"black\">" + this.GetAllStars() + "<color=#323232>";
             m_FinishText.text += " stars. You can now grade me <color=\"black\">125<color=#323232>!";
         }
+    }
+
+    private bool CheckFinish()
+    {
+        foreach (StageInformations stage in m_StageInformations)
+        {
+            if (stage.GetStars() < 1)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     private int GetAllStars()

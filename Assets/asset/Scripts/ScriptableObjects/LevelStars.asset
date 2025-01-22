@@ -21,9 +21,9 @@ MonoBehaviour:
   - 4
   - 8
   m_Level13:
-  - 1
-  - 3
-  - 5
+  - 2
+  - 4
+  - 6
   m_Level21:
   - 15
   - 30
@@ -45,6 +45,6 @@ MonoBehaviour:
   - 70
   - 240
   m_Level33:
-  - 40
+  - 42
   - 80
   - 120

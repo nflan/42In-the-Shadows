@@ -111,14 +111,14 @@ public class ScenesManager : MonoBehaviour
         {
             this.m_SettingsMenu.SetResolution(Screen.resolutions.Length - 1);
         }
-        if (PlayerPrefs.HasKey("Quality"))
-        {
-            this.m_SettingsMenu.SetQuality(PlayerPrefs.GetInt("Quality"));
-        }
-        else
-        {
-            this.m_SettingsMenu.SetQuality(QualitySettings.count - 1);
-        }
+        // if (PlayerPrefs.HasKey("Quality"))
+        // {
+        //     this.m_SettingsMenu.SetQuality(PlayerPrefs.GetInt("Quality"));
+        // }
+        // else
+        // {
+        //     this.m_SettingsMenu.SetQuality(0);
+        // }
         if (PlayerPrefs.HasKey("Music"))
         {
             this.m_SettingsMenu.ToggleMusic(PlayerPrefs.GetInt("Music") == 1);

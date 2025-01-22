@@ -149,17 +149,17 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetQuality(int qualityIndex)
     {
-        if (qualityIndex < 0 || qualityIndex >= QualitySettings.names.Length)
-        {
-            return;
-        }
-        if (PlayerPrefs.GetInt("Quality") != qualityIndex)
-        {
-            PlayerPrefs.SetInt("Quality", qualityIndex);
-            this.m_QualityDropdown.value = qualityIndex;
-        }
+        // if (qualityIndex < 0 || qualityIndex >= QualitySettings.names.Length)
+        // {
+        //     return;
+        // }
+        // if (PlayerPrefs.GetInt("Quality") != qualityIndex)
+        // {
+        //     PlayerPrefs.SetInt("Quality", qualityIndex);
+        //     this.m_QualityDropdown.value = qualityIndex;
+        // }
 
-        QualitySettings.SetQualityLevel(qualityIndex);
+        // QualitySettings.SetQualityLevel(qualityIndex);
     }
 
     public void ToggleMusic(bool toggle)
