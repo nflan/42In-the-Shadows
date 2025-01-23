@@ -7713,6 +7713,11 @@ Transform:
   - {fileID: 965121757}
   m_Father: {fileID: 1206958755}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &277048710 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8256163164788853943, guid: e15769f9927154c53a6b0be937411c29, type: 3}
+  m_PrefabInstance: {fileID: 804733557}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &277919552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1526814149960808, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f, type: 3}
@@ -11291,7 +11296,7 @@ PrefabInstance:
     - target: {fileID: 3521760093104716354, guid: e15769f9927154c53a6b0be937411c29, type: 3}
       propertyPath: m_AudioHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 277048710}
     - target: {fileID: 3521760093104716354, guid: e15769f9927154c53a6b0be937411c29, type: 3}
       propertyPath: m_PhysicalHint
       value: 
@@ -11311,7 +11316,7 @@ PrefabInstance:
     - target: {fileID: 8256163164788853943, guid: e15769f9927154c53a6b0be937411c29, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 6ca9cfd379a3241eca834f7538f024a3, type: 3}
+      objectReference: {fileID: 8300000, guid: 1834d672a7aaa46eaa466f5b70f8220b, type: 3}
     - target: {fileID: 8467183035962888464, guid: e15769f9927154c53a6b0be937411c29, type: 3}
       propertyPath: m_StageName
       value: 
@@ -18222,7 +18227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2470414860999849951, guid: e15769f9927154c53a6b0be937411c29, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2552327380193819893, guid: e15769f9927154c53a6b0be937411c29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34894,7 +34899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5726973298248476536, guid: 296d025c8177b4bc39ecfc2d318263e0, type: 3}
       propertyPath: m_RotationSpeed
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5726973298248476536, guid: 296d025c8177b4bc39ecfc2d318263e0, type: 3}
       propertyPath: m_LevelInformations
@@ -41362,7 +41367,7 @@ PrefabInstance:
       objectReference: {fileID: 1187426431}
     - target: {fileID: 892660574477438118, guid: a42aa986a10454d55a984e5ba0ae82a9, type: 3}
       propertyPath: m_RotationSpeed
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2342495801790927054, guid: a42aa986a10454d55a984e5ba0ae82a9, type: 3}
       propertyPath: m_LocalScale.x
@@ -41450,7 +41455,7 @@ PrefabInstance:
       objectReference: {fileID: 831261356}
     - target: {fileID: 8162908130705287783, guid: a42aa986a10454d55a984e5ba0ae82a9, type: 3}
       propertyPath: m_RotationSpeed
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -48049,7 +48054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1045044775252161935, guid: 207dd07350adb4a10a2c908a59230afe, type: 3}
       propertyPath: m_RotationSpeed
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1045044775252161935, guid: 207dd07350adb4a10a2c908a59230afe, type: 3}
       propertyPath: m_LevelInformations
@@ -53968,7 +53973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091185254259514834, guid: 3f6bf53d3640243f99e471a88d3b78f0, type: 3}
       propertyPath: m_RotationSpeed
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6091185254259514834, guid: 3f6bf53d3640243f99e471a88d3b78f0, type: 3}
       propertyPath: m_LevelInformations
@@ -54867,7 +54872,7 @@ PrefabInstance:
       objectReference: {fileID: 1187426431}
     - target: {fileID: 1933698106217751641, guid: c57c860ebfc7345dc801add29a930959, type: 3}
       propertyPath: m_RotationSpeed
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2721040126724103670, guid: c57c860ebfc7345dc801add29a930959, type: 3}
       propertyPath: m_LocalPosition.y
@@ -54947,7 +54952,7 @@ PrefabInstance:
       objectReference: {fileID: 831261356}
     - target: {fileID: 4656056242828185992, guid: c57c860ebfc7345dc801add29a930959, type: 3}
       propertyPath: m_RotationSpeed
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5082061523896981921, guid: c57c860ebfc7345dc801add29a930959, type: 3}
       propertyPath: m_Name
@@ -55801,7 +55806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3040957705904982056, guid: c72287416b0bb472897c47baffae465d, type: 3}
       propertyPath: m_RotationSpeed
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 3040957705904982056, guid: c72287416b0bb472897c47baffae465d, type: 3}
       propertyPath: m_LevelInformations
@@ -56184,7 +56189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9122665225817171643, guid: e15769f9927154c53a6b0be937411c29, type: 3}
       propertyPath: m_RotationSpeed
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56290,7 +56295,7 @@ PrefabInstance:
       objectReference: {fileID: 831261356}
     - target: {fileID: 1353749225484204507, guid: e9ac6c0cd14fc4e149784ae17a1a3152, type: 3}
       propertyPath: m_RotationSpeed
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4747543747307473152, guid: e9ac6c0cd14fc4e149784ae17a1a3152, type: 3}
       propertyPath: m_Mesh
@@ -56322,7 +56327,7 @@ PrefabInstance:
       objectReference: {fileID: 1187426431}
     - target: {fileID: 5687842535901515076, guid: e9ac6c0cd14fc4e149784ae17a1a3152, type: 3}
       propertyPath: m_RotationSpeed
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6669525162425721521, guid: e9ac6c0cd14fc4e149784ae17a1a3152, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56982,12 +56987,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 225014000}
     - target: {fileID: 487687109403174137, guid: 724b706b5ff5f4c43ac91ec1b117a36a, type: 3}
-      propertyPath: m_MovementSpeed
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 487687109403174137, guid: 724b706b5ff5f4c43ac91ec1b117a36a, type: 3}
       propertyPath: m_RotationSpeed
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2535193918315087097, guid: 724b706b5ff5f4c43ac91ec1b117a36a, type: 3}
       propertyPath: m_LocalPosition.x

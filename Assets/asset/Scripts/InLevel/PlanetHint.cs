@@ -13,12 +13,12 @@ public class PlanetHint : MonoBehaviour
     void OnEnable()
     {
         InvokeRepeating("GlowOnOff", 0f, m_TimeOnOff);
-        Invoke("GlowOn", m_TimeBeforeDisable);
+        Invoke("GlowOff", m_TimeBeforeDisable);
     }
     void OnDisable()
     {
         CancelInvoke("GlowOnOff");
-        GlowOn();
+        GlowOff();
     }
 
     private void GlowOnOff()
@@ -28,11 +28,11 @@ public class PlanetHint : MonoBehaviour
             glowHint.SetActive(!glowHint.activeSelf);
         }
     }
-    private void GlowOn()
+    private void GlowOff()
     {
         foreach (GameObject glowHint in m_GlowHints)
         {
-            glowHint.SetActive(true);
+            glowHint.SetActive(false);
         }
         this.gameObject.SetActive(false);
     }

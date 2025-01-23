@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 241205420179659575}
-  - component: {fileID: 7043739286801273744}
   m_Layer: 6
   m_Name: Trigger
   m_TagString: Untagged
@@ -32,19 +31,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2535193918315087097}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7043739286801273744
-MonoBehaviour:
+--- !u!1 &8560223244572537943
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2571309226721377546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bf4bfffeb5fd4a3f975728d6da51159, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Compare: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6259160553901073745}
+  m_Layer: 6
+  m_Name: Trigger (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6259160553901073745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8560223244572537943}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2535193918315087097}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2640349711140889362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191,7 +208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 23bf7872fbf814fd2b28afe3441e81d7, type: 3}
       propertyPath: m_Name
-      value: Snowflake
+      value: 2-3-Snowflake
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 23bf7872fbf814fd2b28afe3441e81d7, type: 3}
       propertyPath: m_Layer
@@ -228,6 +245,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 23bf7872fbf814fd2b28afe3441e81d7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 241205420179659575}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 23bf7872fbf814fd2b28afe3441e81d7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6259160553901073745}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 23bf7872fbf814fd2b28afe3441e81d7, type: 3}
       insertIndex: -1
@@ -257,7 +277,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CheckPositions: []
   m_Threshold: 3
-  m_Speed: 5
+  m_MovementSpeed: 12
+  m_RotationSpeed: 180
   m_LightSource: {fileID: 0}
   m_Canva: {fileID: 0}
   m_TriggersRotation:
