@@ -17,6 +17,13 @@ Bonus part
 - Creativity: you have implemented more levels than required in the mandatory part.
 - Immersion: You have a great soundtrack to the game. The player can switch it on and off through a menu containing other options (keyboard option, window size...)
 
+To Build
+---
+- Go in your terminal
+- Find your Unity app
+- Then build with command line: 
+```./Unity.app/Contents/MacOS/Unity -quit -batchmode -nographics -buildTarget EmbeddedLinux -executeMethod Builder.Build -projectPath Add/The/Project/Path/Here```
+
 Controls
 ---
 - click and slide to rotate horizontaly.
