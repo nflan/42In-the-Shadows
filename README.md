@@ -1,5 +1,5 @@
 # 42In-the-Shadows
-Project Game engine using **Unity** and scripting in **C++**.
+Project Game engine using **Unity** and scripting in **C#**.
 
 Goal
 ---
